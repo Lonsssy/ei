@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cottage.ru</title>
+</head>
+<body>
+    <header>
+        <div class="header__row container">
+            <img src="media/images/polyany2.png" alt="logo" class="logo">
+            <div class="header__panel">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="index.html" class="menu__link active">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html" class="menu__link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Этапы строительства</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Где нас найти?</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__panel">
+                <div class="menu__list">
+                    <a href="#" class="menu__link">Вход</a>
+                    <a href="#" class="menu__link">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="catalog container">
+            <h1 class="catalog__title">Каталог</h1>
+            <div class="catalog__filter">
+                <label for="oredr">Упорядочить по: </label>
+                    <select name="order" id="order">
+                        <option value="addtime">По дате добавления</option>
+                        <option value="price">По базовой цене</option>
+                        <option value="square">По площади коттеджа</option>
+                    </select>
+                <label for="oredr">Категории: </label>
+                    <select name="filter" id="filter">
+                        <option value="one-floor">Один этаж</option>
+                        <option value="mansard">1,5 этажа(Мансард)</option>
+                        <option value="two-floor">Два этажа</option>
+                    </select>
+            </div>
+            <div class="catalog__products">
+                <div class="card">
+                    <img src="media/catalog/один этаж/1.1/1.jpg" alt="" class="card__img">
+                    <p class="card__title">Проект "Стокгольм"</p>
+                    <p class="card__square">Общая площадь дома 96.80 м2</p>
+                    <p class="card__price">Базовая цена 5.04 млн руб.</p>
+                    <a href="card.html" class="card__btn">Подробнее</a>
+                </div>
+                <div class="card">
+                    <img src="media/catalog/один этаж/1.2/1.jpg" alt="" class="card__img">
+                    <p class="card__title">Проект "Нэшвилл"</p>
+                    <p class="card__square">Общая площадь дома 134.78 м2</p>
+                    <p class="card__price">Базовая цена 6.36 млн руб.</p>
+                    <a href="#" class="card__btn">Подробнее</a>
+                </div>
+                <div class="card">
+                    <img src="media/catalog/один этаж/1.3/1.jpg" alt="" class="card__img">
+                    <p class="card__title">Проект "Берн"</p>
+                    <p class="card__square">Общая площадь дома 38.00 м2</p>
+                    <p class="card__price">Базовая цена 2.26 млн руб.</p>
+                    <a href="#" class="card__btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="catalog__products">
+                <div class="card">
+                    <img src="media/catalog/1,5 этажа (мансарда)/2.1/1.jpg" alt="" class="card__img">
+                    <p class="card__title">Проект "Любляна"</p>
+                    <p class="card__square">Общая площадь дома 203.30 м2</p>
+                    <p class="card__price">Базовая цена 7.88 млн руб.</p>
+                    <a href="#" class="card__btn">Подробнее</a>
+                </div>
+                <div class="card">
+                    <img src="media/catalog/1,5 этажа (мансарда)/2.2/1.jpg" alt="" class="card__img">
+                    <p class="card__title">Проект "Афины"</p>
+                    <p class="card__square">Общая площадь дома 223.30 м2</p>
+                    <p class="card__price">Базовая цена 8.03 млн руб.</p>
+                    <a href="#" class="card__btn">Подробнее</a>
+                </div>
+                <div class="card">
+                    <img src="media/catalog/1,5 этажа (мансарда)/2.3/1.jpg" alt="" class="card__img">
+                    <p class="card__title">Проект "Сакраменто 2"</p>
+                    <p class="card__square">Общая площадь дома 169.30 м2</p>
+                    <p class="card__price">Базовая цена 7.48 млн руб.</p>
+                    <a href="#" class="card__btn">Подробнее</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
