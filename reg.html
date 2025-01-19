@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <header>
+        <div class="header__row container">
+            <a href="index.html"><img src="media/images/polyany2.png" alt="logo" class="logo"></a>
+            <div class="header__panel">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="index.html" class="menu__link">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html" class="menu__link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="stage.html" class="menu__link">Этапы строительства</a>
+                        </li>
+                        <li>
+                            <a href="where-find.html" class="menu__link">Где нас найти?</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__panel">
+                <div class="menu__list">
+                    <a href="auth.html" class="menu__link">Вход</a>
+                    <a href="reg.html" class="menu__link active">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form action="index.html">
+            <div class="reg container">
+                <label for="username">Имя</label>
+                <input type="text" id="username" placeholder="Имя" class="reg__type" required>
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" placeholder="Фамилия" class="reg__type" required>
+                <label for="patronymic">Отчество</label>
+                <input type="text" id="patronymic" placeholder="Отчество" class="reg__type">
+                <label for="login">Логин</label>
+                <input type="text" id="login" placeholder="Логин" class="reg__type" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" class="reg__type" required>
+                <label for="number">Телефон</label>
+                <input type="number" id="number" placeholder="Телефон" class="reg__type" required>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" placeholder="Пароль" class="reg__type" required>
+                <label for="passwordRepeat">Повторите пароль</label>
+                <input type="password" id="passwordRepeat" placeholder="Повторить пароль" class="reg__type" required>
+                <input type="checkbox" id="gridCheck" required>
+                <label for="gridCheck">Согласие с правилами регистрации</label>
+                <button type="submit" class="reg__btn">Зарегистрироваться</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

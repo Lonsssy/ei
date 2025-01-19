@@ -11,6 +11,7 @@
 body,html{
     width: 100%;
     font-family: Raleway;
+    background: #f1f1f1;
 }
 .container{
     max-width: 1300px;
@@ -68,6 +69,9 @@ select{
 .catalog__products{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
     margin-bottom: 30px;
 }
 .about_info{
@@ -83,7 +87,12 @@ select{
 }
 .card__btn{
     text-decoration: none;
-    color: blue;
+    display: inline-block; 
+    background: rgb(172, 172, 172);
+    color: black; 
+    padding: 10px;
+    text-decoration: none; 
+    border-radius: 3px; 
 }
 .product__img{
     height: 600px;
@@ -111,4 +120,180 @@ select{
 }
 .product__txt{
     font-size: 20px;
+    text-align: center;
+}
+.card__title{
+    font-size: 20px;
+    margin-bottom: 5px
+}
+.card__square{
+    margin-bottom: 5px
+}
+.card__price{
+    margin-bottom: 5px
+}
+.stage__title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.stage__txt{
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.find{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.find__img{
+    margin-bottom: 30px;
+}
+.find__txt{
+    font-size: 20px;
+}
+.reg{
+    margin-top: 30px;
+    padding: 16px;
+}
+.reg__type {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #b9b9b9;
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+.reg__type:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+.reg__btn{
+    display: flex; 
+    background: rgb(172, 172, 172);
+    color: black; 
+    padding: 15px;
+    text-decoration: none; 
+    border-radius: 3px;
+    margin-top: 16px;
+    font-family: Raleway;
+    font-size: 17px;
+}
+select{
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 1250px) {
+    .container{
+        max-width: 1024px;
+    }
+    .catalog__products{
+        flex-wrap: wrap;
+    }
+    .product__img{
+        height: 500px;
+    }
+    .menu__link{
+        font-size: 17px;
+    }
+    .product__photo{
+        width: 180px;
+        height: 130px;
+    }
+    .about__logo{
+        width: 500px;
+        height: 250px;
+    }
+}
+@media (max-width: 1000px){
+    .container{
+        max-width: 768px;
+    }
+    .menu__link{
+        font-size: 13px;
+    }
+    .logo{
+        width: 140px;
+        height: 70px;
+    }
+    header{
+        height: 70px;
+    }
+    .card{
+        width: 300px;
+    }
+    .card__img{
+        width: 300px;
+        height: 200px;
+    }
+    .product__img{
+        height: 400px;
+    }
+    .product__photo{
+        width: 160px;
+        height: 110px;
+    }
+    .about__logo{
+        width: 400px;
+        height: 200px;
+    }
+    .about__title{
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .container{
+        max-width: 320px;
+    }
+    .header__panel{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+    }
+    header{
+        height: 50px;
+    }
+    .catalog__title{
+        justify-content: center;
+    }
+    .catalog__filter{
+        align-items: center;
+    }
+    .catalog__products{
+        justify-content: center;
+    }
+    .card__btn{
+        display: flex;
+        justify-content: center;
+    }
+    .product__img{
+        width: 430px;
+        height: 300px;
+    }
+    .product__photo{
+        width: 100px;
+        height: 80px;
+    }
+    .product__txt{
+        font-size: 16px;
+    }
+    .about__logo{
+        width: 300px;
+        height: 150px;
+    }
+    .about__title{
+        text-align: center;
+    }
+    .find__img{
+        width: 400px;
+        height: 200px;
+    }
+    .find__txt{
+        text-align: center;
+        font-size: 18px
+    }
 }

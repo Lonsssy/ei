@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>О нас</title>
+    <title>Вход</title>
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
                             <a href="index.html" class="menu__link">Каталог</a>
                         </li>
                         <li>
-                            <a href="about-us.html" class="menu__link active">О нас</a>
+                            <a href="about-us.html" class="menu__link">О нас</a>
                         </li>
                         <li>
                             <a href="stage.html" class="menu__link">Этапы строительства</a>
@@ -30,19 +30,22 @@
             </div>
             <div class="header__panel">
                 <div class="menu__list">
-                    <a href="auth.html" class="menu__link">Вход</a>
+                    <a href="auth.html" class="menu__link active">Вход</a>
                     <a href="reg.html" class="menu__link">Регистрация</a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="about container">
-            <div class="about_info">
-                <img src="media/images/polyany2.png" alt="" class="about__logo">
-                <h1 class="about__title">Строим комфортные коттеджи в современном стиле.</h1>
+        <form action="index.html">
+            <div class="reg container">
+                <label for="login">Логин</label>
+                <input type="text" id="login" placeholder="Логин" class="reg__type" required>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" placeholder="Пароль" class="reg__type" required>
+                <button type="submit" class="reg__btn">Зарегистрироваться</button>
             </div>
-        </section>
+        </form>
     </main>
 </body>
 </html>
