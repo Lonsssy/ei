@@ -39,24 +39,42 @@
     <main>
         <form action="index.html">
             <div class="reg container">
-                <label for="username">Имя</label>
-                <input type="text" id="username" placeholder="Имя" class="reg__type" required>
-                <label for="surname">Фамилия</label>
-                <input type="text" id="surname" placeholder="Фамилия" class="reg__type" required>
-                <label for="patronymic">Отчество</label>
-                <input type="text" id="patronymic" placeholder="Отчество" class="reg__type">
-                <label for="login">Логин</label>
-                <input type="text" id="login" placeholder="Логин" class="reg__type" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email" class="reg__type" required>
-                <label for="number">Телефон</label>
-                <input type="number" id="number" placeholder="Телефон" class="reg__type" required>
-                <label for="password">Пароль</label>
-                <input type="password" id="password" placeholder="Пароль" class="reg__type" required>
-                <label for="passwordRepeat">Повторите пароль</label>
-                <input type="password" id="passwordRepeat" placeholder="Повторить пароль" class="reg__type" required>
-                <input type="checkbox" id="gridCheck" required>
-                <label for="gridCheck">Согласие с правилами регистрации</label>
+                <div class="column">
+                    <label for="username">Имя</label>
+                    <input type="text" id="username" placeholder="Имя" class="reg__type" required>
+                </div>
+                <div class="column">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" id="surname" placeholder="Фамилия" class="reg__type" required>
+                </div>
+                <div class="column">
+                    <label for="patronymic">Отчество</label>
+                    <input type="text" id="patronymic" placeholder="Отчество" class="reg__type">
+                </div>
+                <div class="column">
+                    <label for="login">Логин</label>
+                    <input type="text" id="login" placeholder="Логин" class="reg__type" required>
+                </div>
+                <div class="column">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email" class="reg__type" required>
+                </div>
+                <div class="column">
+                    <label for="number">Телефон</label>
+                    <input type="number" id="number" placeholder="Телефон" class="reg__type" required>
+                </div>
+                <div class="column">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Пароль" class="reg__type" required>
+                </div>
+                <div class="column">
+                    <label for="passwordRepeat">Повторите пароль</label>
+                    <input type="password" id="passwordRepeat" placeholder="Повторить пароль" class="reg__type" required>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="gridCheck" required>
+                    <label for="gridCheck">Согласие с правилами регистрации</label>
+                </div>
                 <button type="submit" class="reg__btn">Зарегистрироваться</button>
             </div>
         </form>

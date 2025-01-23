@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "Raleway";
     src: url(fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf);
@@ -17,22 +16,22 @@ body,html{
     max-width: 1300px;
     margin: 0 auto;
 }
-header{
-    height: 100px;
-    background: #A3D5E0;
-}
 .logo{
-    width: 200px;
-    height: 100px;
+    padding-top: 10px;
+    width: 100px;
 }
-.header__row{
+header{
+    background-color: #b4e2ec;
+}
+.collapse{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
 }
-.menu__link{
+.nav-link{
     text-decoration: none;
     color: black;
-    font-size: 19px;;
+    font-size: 19px;
 }
 .menu__list{
     list-style: none;
@@ -44,7 +43,7 @@ header{
     align-items: center;
 }
 .active{
-    color: rgb(42, 42, 224);
+    font-weight: 500;
 }
 select{
     font-family: Raleway;
@@ -80,7 +79,7 @@ select{
     align-items: center;
 }
 .about__logo{
-    width: 600px;
+
     height: 300px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -88,11 +87,11 @@ select{
 .card__btn{
     text-decoration: none;
     display: inline-block; 
-    background: rgb(172, 172, 172);
+    border: 1px solid black;
     color: black; 
-    padding: 10px;
+    padding: 5px;
     text-decoration: none; 
-    border-radius: 3px; 
+    border-radius: 5px; 
 }
 .product__img{
     height: 600px;
@@ -156,12 +155,15 @@ select{
 .reg{
     margin-top: 30px;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .reg__type {
-    width: 100%;
+    width: 300px;
     padding: 15px;
     margin: 5px 0 22px 0;
-    display: inline-block;
+    box-sizing: border-box;
     border: 1px solid #b9b9b9;
     background: #f1f1f1;
     border-radius: 3px;
@@ -172,11 +174,11 @@ select{
   }
 .reg__btn{
     display: flex; 
-    background: rgb(172, 172, 172);
+    border: 1px solid black;
     color: black; 
     padding: 15px;
     text-decoration: none; 
-    border-radius: 3px;
+    border-radius: 5px;
     margin-top: 16px;
     font-family: Raleway;
     font-size: 17px;
@@ -184,10 +186,14 @@ select{
 select{
     background-color: #f1f1f1;
 }
-
+.column{
+    display: flex;
+    flex-direction: column;
+}
 @media (max-width: 1250px) {
     .container{
         max-width: 1024px;
+        padding: 0 20px;
     }
     .catalog__products{
         flex-wrap: wrap;
@@ -203,20 +209,20 @@ select{
         height: 130px;
     }
     .about__logo{
-        width: 500px;
         height: 250px;
     }
 }
 @media (max-width: 1000px){
     .container{
         max-width: 768px;
+        padding: 0 20px;
     }
     .menu__link{
         font-size: 13px;
     }
     .logo{
-        width: 140px;
-        height: 70px;
+        height: 50px;
+        width: auto;
     }
     header{
         height: 70px;
@@ -236,26 +242,37 @@ select{
         height: 110px;
     }
     .about__logo{
-        width: 400px;
         height: 200px;
     }
     .about__title{
         font-size: 20px;
     }
+    .collapse{
+        display: flex;
+    }
+    .navbar-collapse{
+        background-color: #f1f1f1;
+        padding-bottom: 30px;
+        margin-top: 3px;
+        z-index: 1;
+        display: block;
+    }
 }
 @media (max-width: 480px) {
     .container{
         max-width: 320px;
+        padding: 0 20px;
     }
     .header__panel{
         display: none;
     }
     .logo{
-        width: 100px;
+        width: auto;
         height: 50px;
+        padding: 0;
     }
     header{
-        height: 50px;
+        height: 70px;
     }
     .catalog__title{
         justify-content: center;
@@ -282,7 +299,6 @@ select{
         font-size: 16px;
     }
     .about__logo{
-        width: 300px;
         height: 150px;
     }
     .about__title{
